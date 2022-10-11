@@ -20,6 +20,7 @@ namespace OswaTech.Web.Host.Controllers
 
         public IActionResult Index()
         {
+
             return Redirect("/swagger");
         }
 
