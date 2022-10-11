@@ -1,0 +1,56 @@
+DEBUG 2022-10-11 12:25:17,022 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-10-11 12:25:18,893 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2022-10-11 12:25:18,913 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OswaTech.Web.Host.Startup.OswaTechWebHostModule, OswaTech.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OswaTech.OswaTechWebCoreModule, OswaTech.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OswaTech.OswaTechApplicationModule, OswaTech.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OswaTech.OswaTechCoreModule, OswaTech.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,920 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,921 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OswaTech.EntityFrameworkCore.OswaTechEntityFrameworkModule, OswaTech.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,922 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,923 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,924 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,924 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,925 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:18,931 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2022-10-11 12:25:19,489 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-10-11 12:25:19,490 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-10-11 12:25:19,490 [1    ] o.Configuration.LanguageManagementConfig - Converted OswaTech (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-10-11 12:25:19,490 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-10-11 12:25:21,372 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: OswaTech.EntityFrameworkCore.OswaTechDbContext, OswaTech.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-10-11 12:25:21,783 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2022-10-11 12:25:21,881 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-10-11 12:25:21,898 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-10-11 12:25:21,907 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: OswaTech
+DEBUG 2022-10-11 12:25:21,913 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2022-10-11 12:25:21,928 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2022-10-11 12:25:21,939 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[OswaTech.MultiTenancy.Tenant, OswaTech.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[OswaTech.Authorization.Users.User, OswaTech.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2022-10-11 12:25:22,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 20 classes define auto mapping attributes
+DEBUG 2022-10-11 12:25:22,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2022-10-11 12:25:22,134 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Users.Dto.CreateUserDto
+DEBUG 2022-10-11 12:25:22,135 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Users.Dto.UserDto
+DEBUG 2022-10-11 12:25:22,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2022-10-11 12:25:22,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Sessions.Dto.UserLoginInfoDto
+DEBUG 2022-10-11 12:25:22,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Roles.Dto.PermissionDto
+DEBUG 2022-10-11 12:25:22,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.MultiTenancy.Dto.TenantDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.AboutUsCompanyMessageImagesDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.AboutUsCompanyPurposesImageDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.AboutUsDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.BusinessDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.BusinessImageDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.FooterDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.HomeDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.PhoneImagesDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.ProccessDto
+DEBUG 2022-10-11 12:25:22,139 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.ProccessImagesDto
+DEBUG 2022-10-11 12:25:22,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.ServiceDto
+DEBUG 2022-10-11 12:25:22,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OswaTech.Dto.ServiceImagesDto
+WARN  2022-10-11 12:25:25,344 [1    ] oft.EntityFrameworkCore.Model.Validation - Entity 'Edition' has a global query filter defined and is the required end of a relationship with the entity 'EditionFeatureSetting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+INFO  2022-10-11 12:25:25,896 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.4 initialized 'OswaTechDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.4' with options: None
+INFO  2022-10-11 12:25:27,144 [15   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.4 initialized 'OswaTechDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.4' with options: None
+ERROR 2022-10-11 12:25:37,503 [1    ] .EntityFrameworkCore.Database.Connection - An error occurred using the connection to database 'OswaTechDb' on server 'DESKTOP-OQTN1AO\SQLEXPRESS'.
+ERROR 2022-10-11 12:25:37,503 [15   ] .EntityFrameworkCore.Database.Connection - An error occurred using the connection to database 'OswaTechDb' on server 'DESKTOP-OQTN1AO\SQLEXPRESS'.
