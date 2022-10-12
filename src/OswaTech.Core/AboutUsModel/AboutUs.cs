@@ -24,7 +24,7 @@ namespace OswaTech.AboutUsPageModel
         [DisplayName("AboutUs Title English")]
         public string AboutUsTitleEnglish { get; set; }
         [Required]
-        public string AboutUsCompanyMessageImagesId { get; set; }
+        public int AboutUsCompanyMessageImagesId { get; set; }
         [Required]
         [MaxLength(50)]
         [DisplayName("First Address English")]
@@ -34,7 +34,7 @@ namespace OswaTech.AboutUsPageModel
         [DisplayName("First Address Arabic")]
         public string FirstAddressArabic { get; set; }
         [Required]
-        public string AboutUsCompanyPurposesImagesId { set; get; }
+        public int AboutUsCompanyPurposesImagesId { set; get; }
         [Required]
         [MaxLength(50)]
         [DisplayName("Second Address English")]

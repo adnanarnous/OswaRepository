@@ -11,6 +11,32 @@ namespace OswaTech.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+              name: "AboutUsCompanyPurposesImageDb",
+              columns: table => new
+              {
+                  Id = table.Column<int>(type: "int", nullable: false)
+                      .Annotation("SqlServer:Identity", "1, 1"),
+                  AboutUsCompanyPurposesImagesUrl = table.Column<string>(type: "Varchar(Max)", nullable: false),
+              },
+              constraints: table =>
+              {
+                  table.PrimaryKey("PK_AboutUsCompanyPurposesImageDb", x => x.Id);
+              });
+
+            migrationBuilder.CreateTable(
+              name: "AboutUsCompanyMessageImagesDb",
+              columns: table => new
+              {
+                  Id = table.Column<int>(type: "int", nullable: false)
+                      .Annotation("SqlServer:Identity", "1, 1"),
+                  AboutUsCompanyMessageImagesUrl = table.Column<string>(type: "Varchar(Max)", nullable: false),
+              },
+              constraints: table =>
+              {
+                  table.PrimaryKey("PK_AboutUsCompanyMessageImagesDb", x => x.Id);
+              });
+
+            migrationBuilder.CreateTable(
                 name: "AboutUsDb",
                 columns: table => new
                 {
@@ -19,10 +45,10 @@ namespace OswaTech.Migrations
                     AboutUsBackGroundUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AboutUsTitleArabic = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     AboutUsTitleEnglish = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    AboutUsCompanyMessageImagesId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AboutUsCompanyMessageImagesId = table.Column<string>(type: "int", nullable: false),
                     FirstAddressEnglish = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     FirstAddressArabic = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    AboutUsCompanyPurposesImagesId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AboutUsCompanyPurposesImagesId = table.Column<string>(type: "int", nullable: false),
                     SecondAddressArabic = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     SecondAddressEnglish = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     FirstContentEnglish = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -43,41 +69,24 @@ namespace OswaTech.Migrations
 
                     table.ForeignKey(
                     name: "FK_AboutUsCompanyPurposesImagesId",
-                    column: x => x.AboutUsCompanyMessageImagesId,
+                    column: x => x.AboutUsCompanyPurposesImagesId,
                     principalTable: "AboutUsCompanyPurposesImageDb",
                     principalColumn: "Id",
                     onDelete: ReferentialAction.Cascade);
                 });
-           
+
             migrationBuilder.CreateTable(
-               name: "AboutUsCompanyMessageImagesDb",
+               name: "BusinessImagesDb",
                columns: table => new
                {
                    Id = table.Column<int>(type: "int", nullable: false)
                        .Annotation("SqlServer:Identity", "1, 1"),
-                   AboutUsCompanyMessageImagesUrl=table.Column<string>(type: "Varchar(Max)",nullable: false),
+                   BusinessModelImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                },
                constraints: table =>
                {
-                   table.PrimaryKey("PK_AboutUsCompanyMessageImagesDb", x => x.Id);
+                   table.PrimaryKey("PK_BusinessImagesDb", x => x.Id);
                });
-
-
-            migrationBuilder.CreateTable(
-              name: "AboutUsCompanyPurposesImageDb",
-              columns: table => new
-              {
-                  Id = table.Column<int>(type: "int", nullable: false)
-                      .Annotation("SqlServer:Identity", "1, 1"),
-                  AboutUsCompanyPurposesImagesUrl = table.Column<string>(type: "Varchar(Max)", nullable: false),
-              },
-              constraints: table =>
-              {
-                  table.PrimaryKey("PK_AboutUsCompanyPurposesImageDb", x => x.Id);
-              });
-
-
-
 
             migrationBuilder.CreateTable(
                 name: "businessesDb",
@@ -103,18 +112,7 @@ namespace OswaTech.Migrations
                     onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "BusinessImagesDb",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    BusinessModelImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_BusinessImagesDb", x => x.Id);
-                });
+           
 
             migrationBuilder.CreateTable(
                 name: "FooterDb",
@@ -134,6 +132,20 @@ namespace OswaTech.Migrations
                 {
                     table.PrimaryKey("PK_FooterDb", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "PhoneImagesDb",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PhoneImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PhoneImagesDb", x => x.Id);
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "HomeDb",
@@ -161,18 +173,21 @@ namespace OswaTech.Migrations
                     onDelete: ReferentialAction.Cascade);
                 });
 
+
+
             migrationBuilder.CreateTable(
-                name: "PhoneImagesDb",
+                name: "ProccessImagesDb",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PhoneImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ProccessImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PhoneImagesDb", x => x.Id);
+                    table.PrimaryKey("PK_ProccessImagesDb", x => x.Id);
                 });
+
 
             migrationBuilder.CreateTable(
                 name: "ProccessDb",
@@ -198,19 +213,7 @@ namespace OswaTech.Migrations
                    onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "ProccessImagesDb",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ProccessImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ProccessImagesDb", x => x.Id);
-                });
-
+            
             migrationBuilder.CreateTable(
                 name: "ServiceImages",
                 columns: table => new
